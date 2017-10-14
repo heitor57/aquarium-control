@@ -1,0 +1,33 @@
+
+# 1 "atraso.c"
+
+# 29
+void atraso_ms(unsigned int valor)
+{
+unsigned int i;
+volatile unsigned char j1;
+volatile unsigned char j2=0;
+
+for (i =0; i< valor; i++)
+{
+j1=(8000000/(4000l*50));
+
+# 38
+#asm
+l1: MOVLW 9 ; 20 j1
+    MOVWF atraso_ms@j2 ; 20 j1
+    NOP ; 180 j2j1
+    NOP ; 180 j2j1
+    DECFSZ atraso_ms@j2, F ; 160 j2j1 -j1
+                              ; 40 2j1
+    GOTO $-3 ; 320 2j2j1 -2j1
+    NOP ; 20 j1
+    DECFSZ atraso_ms@j1, F ; 19 j1 -1
+                              ; 2 2
+    GOTO l1 ; 38 2j1 -2
+    NOP ; 1 1
+#endasm ;
+
+
+    }
+}

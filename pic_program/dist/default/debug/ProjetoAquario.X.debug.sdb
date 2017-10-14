@@ -1,0 +1,629 @@
+[p LITE_MODE AUTOSTATIC LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F4550 ]
+[d frameptr 4065 ]
+"30 C:\Users\Heitor\Desktop\ProjetoAquario.X\adc.c
+[v _adc_init adc_init `(v  1 e 1 0 ]
+"44
+[v _adc_amostra adc_amostra `(ui  1 e 2 0 ]
+[v i2_adc_amostra adc_amostra `(ui  1 e 2 0 ]
+"29 C:\Users\Heitor\Desktop\ProjetoAquario.X\atraso.c
+[v _atraso_ms atraso_ms `(v  1 e 1 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"54 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"20 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+[v i2___lldiv __lldiv `(ul  1 e 4 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 3 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 3 0 ]
+"11 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 3 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+[v i2___lmul __lmul `(ul  1 e 4 0 ]
+"79 C:\Users\Heitor\Desktop\ProjetoAquario.X\config.c
+[v _main main `(v  1 e 1 0 ]
+"25 C:\Users\Heitor\Desktop\ProjetoAquario.X\main.c
+[v _itrp itrp `II(v  1 e 1 0 ]
+"105
+[v _setup setup `(v  1 e 1 0 ]
+"159
+[v _loop loop `(v  1 e 1 0 ]
+"31 C:\Users\Heitor\Desktop\ProjetoAquario.X\pwm.c
+[v _PWM1_Init PWM1_Init `(v  1 e 1 0 ]
+"79
+[v _PWM1_Start PWM1_Start `(v  1 e 1 0 ]
+"105
+[v _PWM1_Set_Duty PWM1_Set_Duty `(v  1 e 1 0 ]
+[v i2_PWM1_Set_Duty PWM1_Set_Duty `(v  1 e 1 0 ]
+"35 C:\Users\Heitor\Desktop\ProjetoAquario.X\serial.c
+[v _serial_init serial_init `(v  1 e 1 0 ]
+"60
+[v _serial_tx serial_tx `(v  1 e 1 0 ]
+"136
+[v _serial_rx_str_until serial_rx_str_until `(*.39uc  1 e 2 0 ]
+[s S115 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+"2569 C:\Program Files (x86)\Microchip\xc8\v1.41\include\pic18f4550.h
+[s S124 . 1 `uc 1 T1OSO 1 0 :1:0 
+`uc 1 T1OSI 1 0 :1:1 
+`uc 1 CCP1 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 TX 1 0 :1:6 
+`uc 1 RX 1 0 :1:7 
+]
+[s S131 . 1 `uc 1 T13CKI 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 P1A 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 CK 1 0 :1:6 
+`uc 1 DT 1 0 :1:7 
+]
+[s S138 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 CCP2 1 0 :1:1 
+`uc 1 PA1 1 0 :1:2 
+]
+[s S142 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 PA2 1 0 :1:1 
+]
+[u S145 . 1 `S115 1 . 1 0 `S124 1 . 1 0 `S131 1 . 1 0 `S138 1 . 1 0 `S142 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES145  1 e 1 @3970 ]
+"3383
+[v _TRISA TRISA `VEuc  1 e 1 @3986 ]
+[s S260 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+`uc 1 TRISA6 1 0 :1:6 
+]
+"3413
+[s S268 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+`uc 1 RA6 1 0 :1:6 
+]
+[u S276 . 1 `S260 1 . 1 0 `S268 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES276  1 e 1 @3986 ]
+"3580
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+"3801
+[v _TRISC TRISC `VEuc  1 e 1 @3988 ]
+[s S228 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"3829
+[s S235 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+[u S242 . 1 `S228 1 . 1 0 `S235 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES242  1 e 1 @3988 ]
+"3954
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+"4175
+[v _TRISE TRISE `VEuc  1 e 1 @3990 ]
+[s S441 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSPIE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+`uc 1 SPPIE 1 0 :1:7 
+]
+"4358
+[s S450 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TX1IE 1 0 :1:4 
+`uc 1 RC1IE 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 PSPIE 1 0 :1:7 
+]
+[u S456 . 1 `S441 1 . 1 0 `S450 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES456  1 e 1 @3997 ]
+[s S184 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 SPPIF 1 0 :1:7 
+]
+"4441
+[s S193 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TX1IF 1 0 :1:4 
+`uc 1 RC1IF 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 PSPIF 1 0 :1:7 
+]
+[u S199 . 1 `S184 1 . 1 0 `S193 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES199  1 e 1 @3998 ]
+[s S475 . 1 `uc 1 CCP2IE 1 0 :1:0 
+`uc 1 TMR3IE 1 0 :1:1 
+`uc 1 HLVDIE 1 0 :1:2 
+`uc 1 BCLIE 1 0 :1:3 
+`uc 1 EEIE 1 0 :1:4 
+`uc 1 USBIE 1 0 :1:5 
+`uc 1 CMIE 1 0 :1:6 
+`uc 1 OSCFIE 1 0 :1:7 
+]
+"4604
+[s S484 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 LVDIE 1 0 :1:2 
+]
+[u S487 . 1 `S475 1 . 1 0 `S484 1 . 1 0 ]
+[v _PIE2bits PIE2bits `VES487  1 e 1 @4000 ]
+[s S87 . 1 `uc 1 CCP2IF 1 0 :1:0 
+`uc 1 TMR3IF 1 0 :1:1 
+`uc 1 HLVDIF 1 0 :1:2 
+`uc 1 BCLIF 1 0 :1:3 
+`uc 1 EEIF 1 0 :1:4 
+`uc 1 USBIF 1 0 :1:5 
+`uc 1 CMIF 1 0 :1:6 
+`uc 1 OSCFIF 1 0 :1:7 
+]
+"4674
+[s S96 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 LVDIF 1 0 :1:2 
+]
+[u S99 . 1 `S87 1 . 1 0 `S96 1 . 1 0 ]
+[v _PIR2bits PIR2bits `VES99  1 e 1 @4001 ]
+[s S902 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"4917
+[s S911 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 ADEN 1 0 :1:3 
+]
+[s S914 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 SRENA 1 0 :1:5 
+]
+[s S917 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC8_9 1 0 :1:6 
+]
+[s S920 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC9 1 0 :1:6 
+]
+[s S923 . 1 `uc 1 RCD8 1 0 :1:0 
+]
+[u S925 . 1 `S902 1 . 1 0 `S911 1 . 1 0 `S914 1 . 1 0 `S917 1 . 1 0 `S920 1 . 1 0 `S923 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES925  1 e 1 @4011 ]
+[s S850 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"5124
+[s S859 . 1 `uc 1 TX9D1 1 0 :1:0 
+`uc 1 TRMT1 1 0 :1:1 
+`uc 1 BRGH1 1 0 :1:2 
+`uc 1 SENDB1 1 0 :1:3 
+`uc 1 SYNC1 1 0 :1:4 
+`uc 1 TXEN1 1 0 :1:5 
+`uc 1 TX91 1 0 :1:6 
+`uc 1 CSRC1 1 0 :1:7 
+]
+[s S868 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 TX8_9 1 0 :1:6 
+]
+[s S871 . 1 `uc 1 TXD8 1 0 :1:0 
+]
+[u S873 . 1 `S850 1 . 1 0 `S859 1 . 1 0 `S868 1 . 1 0 `S871 1 . 1 0 ]
+[v _TXSTAbits TXSTAbits `VES873  1 e 1 @4012 ]
+"5340
+[v _TXREG TXREG `VEuc  1 e 1 @4013 ]
+"5351
+[v _RCREG RCREG `VEuc  1 e 1 @4014 ]
+"5362
+[v _SPBRG SPBRG `VEuc  1 e 1 @4015 ]
+[s S322 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_T3SYNC 1 0 :1:2 
+]
+"5420
+[s S325 . 1 `uc 1 TMR3ON 1 0 :1:0 
+`uc 1 TMR3CS 1 0 :1:1 
+`uc 1 nT3SYNC 1 0 :1:2 
+`uc 1 T3CCP1 1 0 :1:3 
+`uc 1 T3CKPS 1 0 :2:4 
+`uc 1 T3CCP2 1 0 :1:6 
+`uc 1 RD16 1 0 :1:7 
+]
+[s S333 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T3SYNC 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 T3CKPS0 1 0 :1:4 
+`uc 1 T3CKPS1 1 0 :1:5 
+]
+[s S339 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T3NSYNC 1 0 :1:2 
+]
+[s S342 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 SOSCEN3 1 0 :1:3 
+`uc 1 . 1 0 :3:4 
+`uc 1 RD163 1 0 :1:7 
+]
+[s S347 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 T3RD16 1 0 :1:7 
+]
+[u S350 . 1 `S322 1 . 1 0 `S325 1 . 1 0 `S333 1 . 1 0 `S339 1 . 1 0 `S342 1 . 1 0 `S347 1 . 1 0 ]
+[v _T3CONbits T3CONbits `VES350  1 e 1 @4017 ]
+"5505
+[v _TMR3L TMR3L `VEuc  1 e 1 @4018 ]
+"5511
+[v _TMR3H TMR3H `VEuc  1 e 1 @4019 ]
+"6167
+[v _CCP2CON CCP2CON `VEuc  1 e 1 @4026 ]
+"6236
+[v _CCPR2L CCPR2L `VEuc  1 e 1 @4027 ]
+"6242
+[v _CCPR2H CCPR2H `VEuc  1 e 1 @4028 ]
+"6248
+[v _CCP1CON CCP1CON `VEuc  1 e 1 @4029 ]
+"6415
+[v _CCPR1L CCPR1L `VEuc  1 e 1 @4030 ]
+"6427
+[v _ADCON2 ADCON2 `VEuc  1 e 1 @4032 ]
+"6497
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
+"6581
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @4034 ]
+[s S645 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_NOT_DONE 1 0 :1:1 
+]
+"6625
+[s S648 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS 1 0 :4:2 
+]
+[s S652 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_DONE 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+]
+[s S659 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 DONE 1 0 :1:1 
+]
+[s S662 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+]
+[s S665 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 NOT_DONE 1 0 :1:1 
+]
+[s S668 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 nDONE 1 0 :1:1 
+]
+[s S671 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GODONE 1 0 :1:1 
+]
+[u S674 . 1 `S645 1 . 1 0 `S648 1 . 1 0 `S652 1 . 1 0 `S659 1 . 1 0 `S662 1 . 1 0 `S665 1 . 1 0 `S668 1 . 1 0 `S671 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES674  1 e 1 @4034 ]
+"6705
+[v _ADRESL ADRESL `VEuc  1 e 1 @4035 ]
+"6711
+[v _ADRESH ADRESH `VEuc  1 e 1 @4036 ]
+[s S777 . 1 `uc 1 T2CKPS 1 0 :2:0 
+`uc 1 TMR2ON 1 0 :1:2 
+`uc 1 TOUTPS 1 0 :4:3 
+]
+"7134
+[s S781 . 1 `uc 1 T2CKPS0 1 0 :1:0 
+`uc 1 T2CKPS1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 T2OUTPS0 1 0 :1:3 
+`uc 1 T2OUTPS1 1 0 :1:4 
+`uc 1 T2OUTPS2 1 0 :1:5 
+`uc 1 T2OUTPS3 1 0 :1:6 
+]
+[s S789 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 TOUTPS0 1 0 :1:3 
+`uc 1 TOUTPS1 1 0 :1:4 
+`uc 1 TOUTPS2 1 0 :1:5 
+`uc 1 TOUTPS3 1 0 :1:6 
+]
+[u S795 . 1 `S777 1 . 1 0 `S781 1 . 1 0 `S789 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES795  1 e 1 @4042 ]
+"7203
+[v _PR2 PR2 `VEuc  1 e 1 @4043 ]
+[s S389 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_T1SYNC 1 0 :1:2 
+]
+"7351
+[s S392 . 1 `uc 1 TMR1ON 1 0 :1:0 
+`uc 1 TMR1CS 1 0 :1:1 
+`uc 1 nT1SYNC 1 0 :1:2 
+`uc 1 T1OSCEN 1 0 :1:3 
+`uc 1 T1CKPS 1 0 :2:4 
+`uc 1 T1RUN 1 0 :1:6 
+`uc 1 RD16 1 0 :1:7 
+]
+[s S400 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T1SYNC 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 T1CKPS0 1 0 :1:4 
+`uc 1 T1CKPS1 1 0 :1:5 
+]
+[s S406 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 SOSCEN 1 0 :1:3 
+`uc 1 . 1 0 :3:4 
+`uc 1 T1RD16 1 0 :1:7 
+]
+[u S411 . 1 `S389 1 . 1 0 `S392 1 . 1 0 `S400 1 . 1 0 `S406 1 . 1 0 ]
+[v _T1CONbits T1CONbits `VES411  1 e 1 @4045 ]
+"7426
+[v _TMR1L TMR1L `VEuc  1 e 1 @4046 ]
+"7432
+[v _TMR1H TMR1H `VEuc  1 e 1 @4047 ]
+[s S296 . 1 `uc 1 T0PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+`uc 1 T08BIT 1 0 :1:6 
+`uc 1 TMR0ON 1 0 :1:7 
+]
+"7984
+[s S303 . 1 `uc 1 T0PS0 1 0 :1:0 
+`uc 1 T0PS1 1 0 :1:1 
+`uc 1 T0PS2 1 0 :1:2 
+]
+[u S307 . 1 `S296 1 . 1 0 `S303 1 . 1 0 ]
+[v _T0CONbits T0CONbits `VES307  1 e 1 @4053 ]
+"8039
+[v _TMR0L TMR0L `VEuc  1 e 1 @4054 ]
+"8045
+[v _TMR0H TMR0H `VEuc  1 e 1 @4055 ]
+[s S36 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE_GIEL 1 0 :1:6 
+`uc 1 GIE_GIEH 1 0 :1:7 
+]
+"8476
+[s S45 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 INT0F 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INT0E 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+[s S54 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+[u S58 . 1 `S36 1 . 1 0 `S45 1 . 1 0 `S54 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES58  1 e 1 @4082 ]
+"20 C:\Users\Heitor\Desktop\ProjetoAquario.X\main.c
+[v _vent_on vent_on `c  1 e 1 0 ]
+[v _aquec_on aquec_on `c  1 e 1 0 ]
+"21
+[v _hora hora `c  1 e 1 0 ]
+[v _minuto minuto `c  1 e 1 0 ]
+[v _segundo segundo `c  1 e 1 0 ]
+"22
+[v _hora_refeicao hora_refeicao `c  1 e 1 0 ]
+[v _minuto_refeicao minuto_refeicao `c  1 e 1 0 ]
+"23
+[v _gira_servo gira_servo `uc  1 e 1 0 ]
+[v _temperatura_des temperatura_des `uc  1 e 1 0 ]
+"24
+[v _temp temp `ui  1 e 2 0 ]
+[v _temperatura temperatura `ui  1 e 2 0 ]
+"158
+[v _buffer buffer `[5]uc  1 e 5 0 ]
+"79 C:\Users\Heitor\Desktop\ProjetoAquario.X\config.c
+[v _main main `(v  1 e 1 0 ]
+{
+"94
+} 0
+"105 C:\Users\Heitor\Desktop\ProjetoAquario.X\main.c
+[v _setup setup `(v  1 e 1 0 ]
+{
+"157
+} 0
+"35 C:\Users\Heitor\Desktop\ProjetoAquario.X\serial.c
+[v _serial_init serial_init `(v  1 e 1 0 ]
+{
+"56
+} 0
+"30 C:\Users\Heitor\Desktop\ProjetoAquario.X\adc.c
+[v _adc_init adc_init `(v  1 e 1 0 ]
+{
+"42
+} 0
+"79 C:\Users\Heitor\Desktop\ProjetoAquario.X\pwm.c
+[v _PWM1_Start PWM1_Start `(v  1 e 1 0 ]
+{
+"94
+} 0
+"105
+[v _PWM1_Set_Duty PWM1_Set_Duty `(v  1 e 1 0 ]
+{
+[v PWM1_Set_Duty@d d `uc  1 a 1 wreg ]
+"107
+[v PWM1_Set_Duty@temp temp `ui  1 a 2 28 ]
+"105
+[v PWM1_Set_Duty@d d `uc  1 a 1 wreg ]
+"109
+[v PWM1_Set_Duty@d d `uc  1 a 1 27 ]
+"113
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+{
+"17
+[v ___lmul@product product `ul  1 a 4 8 ]
+"15
+[v ___lmul@multiplier multiplier `ul  1 p 4 0 ]
+[v ___lmul@multiplicand multiplicand `ul  1 p 4 4 ]
+"129
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+{
+"11
+[v ___lldiv@quotient quotient `ul  1 a 4 20 ]
+"12
+[v ___lldiv@counter counter `uc  1 a 1 24 ]
+"8
+[v ___lldiv@dividend dividend `ul  1 p 4 12 ]
+[v ___lldiv@divisor divisor `ul  1 p 4 16 ]
+"31
+} 0
+"31 C:\Users\Heitor\Desktop\ProjetoAquario.X\pwm.c
+[v _PWM1_Init PWM1_Init `(v  1 e 1 0 ]
+{
+"33
+[v PWM1_Init@temp temp `ui  1 a 2 20 ]
+"31
+[v PWM1_Init@f f `ui  1 p 2 14 ]
+"76
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+{
+"11
+[v ___aldiv@quotient quotient `l  1 a 4 10 ]
+"12
+[v ___aldiv@sign sign `uc  1 a 1 9 ]
+[v ___aldiv@counter counter `uc  1 a 1 8 ]
+"8
+[v ___aldiv@dividend dividend `l  1 p 4 0 ]
+[v ___aldiv@divisor divisor `l  1 p 4 4 ]
+"42
+} 0
+"159 C:\Users\Heitor\Desktop\ProjetoAquario.X\main.c
+[v _loop loop `(v  1 e 1 0 ]
+{
+"193
+} 0
+"60 C:\Users\Heitor\Desktop\ProjetoAquario.X\serial.c
+[v _serial_tx serial_tx `(v  1 e 1 0 ]
+{
+[v serial_tx@val val `uc  1 a 1 wreg ]
+[v serial_tx@val val `uc  1 a 1 wreg ]
+"62
+[v serial_tx@val val `uc  1 a 1 0 ]
+"64
+} 0
+"136
+[v _serial_rx_str_until serial_rx_str_until `(*.39uc  1 e 2 0 ]
+{
+"139
+[v serial_rx_str_until@i i `ui  1 a 2 16 ]
+"136
+[v serial_rx_str_until@buff buff `*.39uc  1 p 2 6 ]
+[v serial_rx_str_until@size size `ui  1 p 2 8 ]
+[v serial_rx_str_until@term term `uc  1 p 1 10 ]
+"165
+} 0
+"29 C:\Users\Heitor\Desktop\ProjetoAquario.X\atraso.c
+[v _atraso_ms atraso_ms `(v  1 e 1 0 ]
+{
+"31
+[v atraso_ms@i i `ui  1 a 2 2 ]
+"33
+[v atraso_ms@j2 j2 `VEuc  1 a 1 5 ]
+"32
+[v atraso_ms@j1 j1 `VEuc  1 a 1 4 ]
+"29
+[v atraso_ms@valor valor `ui  1 p 2 0 ]
+"55
+} 0
+"44 C:\Users\Heitor\Desktop\ProjetoAquario.X\adc.c
+[v _adc_amostra adc_amostra `(ui  1 e 2 0 ]
+{
+[v adc_amostra@canal canal `uc  1 a 1 wreg ]
+[v adc_amostra@canal canal `uc  1 a 1 wreg ]
+[v adc_amostra@canal canal `uc  1 a 1 6 ]
+"81
+} 0
+"25 C:\Users\Heitor\Desktop\ProjetoAquario.X\main.c
+[v _itrp itrp `II(v  1 e 1 0 ]
+{
+"103
+} 0
+"44 C:\Users\Heitor\Desktop\ProjetoAquario.X\adc.c
+[v i2_adc_amostra adc_amostra `(ui  1 e 2 0 ]
+{
+[v i2adc_amostra@canal canal `uc  1 a 1 wreg ]
+[v i2adc_amostra@canal canal `uc  1 a 1 wreg ]
+[v i2adc_amostra@canal canal `uc  1 a 1 6 ]
+"81
+} 0
+"105 C:\Users\Heitor\Desktop\ProjetoAquario.X\pwm.c
+[v i2_PWM1_Set_Duty PWM1_Set_Duty `(v  1 e 1 0 ]
+{
+[v i2PWM1_Set_Duty@d d `uc  1 a 1 wreg ]
+[v i2PWM1_Set_Duty@temp PWM1_Set_Duty `ui  1 a 2 28 ]
+[v i2PWM1_Set_Duty@d d `uc  1 a 1 wreg ]
+"109
+[v i2PWM1_Set_Duty@d d `uc  1 a 1 27 ]
+"113
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul32.c
+[v i2___lmul __lmul `(ul  1 e 4 0 ]
+{
+[v i2___lmul@product __lmul `ul  1 a 4 8 ]
+[v i2___lmul@multiplier multiplier `ul  1 p 4 0 ]
+[v i2___lmul@multiplicand multiplicand `ul  1 p 4 4 ]
+"129
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lldiv.c
+[v i2___lldiv __lldiv `(ul  1 e 4 0 ]
+{
+[v i2___lldiv@quotient __lldiv `ul  1 a 4 20 ]
+[v i2___lldiv@counter __lldiv `uc  1 a 1 24 ]
+[v i2___lldiv@dividend dividend `ul  1 p 4 12 ]
+[v i2___lldiv@divisor divisor `ul  1 p 4 16 ]
+"31
+} 0

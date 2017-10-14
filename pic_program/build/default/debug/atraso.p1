@@ -1,0 +1,72 @@
+Version 3.2 HI-TECH Software Intermediate Code
+"29 atraso.c
+[v _atraso_ms `(v ~T0 @X0 1 ef1`ui ]
+"30
+{
+[; ;atraso.c: 29: void atraso_ms(unsigned int valor)
+[; ;atraso.c: 30: {
+[e :U _atraso_ms ]
+"29
+[v _valor `ui ~T0 @X0 1 r1 ]
+"30
+[f ]
+"31
+[v _i `ui ~T0 @X0 1 a ]
+"32
+[v _j1 `Vuc ~T0 @X0 1 a ]
+"33
+[v _j2 `Vuc ~T0 @X0 1 a ]
+[; ;atraso.c: 31: unsigned int i;
+[; ;atraso.c: 32: volatile unsigned char j1;
+[; ;atraso.c: 33: volatile unsigned char j2=0;
+[e = _j2 -> -> 0 `i `uc ]
+[; ;atraso.c: 35: for (i =0; i< valor; i++)
+"35
+{
+[e = _i -> -> 0 `i `ui ]
+[e $U 5  ]
+"36
+[e :U 2 ]
+[; ;atraso.c: 36: {
+{
+[; ;atraso.c: 37: j1=(8000000/(4000l*50));
+"37
+[e = _j1 -> / -> 8000000 `l * -> 4000 `l -> -> 50 `i `l `uc ]
+"39
+[; <" l1: MOVLW 9 ; 20 j1 ;# ">
+"40
+[; <"     MOVWF atraso_ms@j2 ; 20 j1 ;# ">
+"41
+[; <"     NOP ; 180 j2j1 ;# ">
+"42
+[; <"     NOP ; 180 j2j1 ;# ">
+"43
+[; <"     DECFSZ atraso_ms@j2, F ; 160 j2j1 -j1 ;# ">
+"44
+[; <"                               ; 40 2j1 ;# ">
+"45
+[; <"     GOTO $-3 ; 320 2j2j1 -2j1 ;# ">
+"46
+[; <"     NOP ; 20 j1 ;# ">
+"47
+[; <"     DECFSZ atraso_ms@j1, F ; 19 j1 -1 ;# ">
+"48
+[; <"                               ; 2 2 ;# ">
+"49
+[; <"     GOTO l1 ; 38 2j1 -2 ;# ">
+"50
+[; <"     NOP ; 1 1 ;# ">
+"54
+}
+"35
+[e ++ _i -> -> 1 `i `ui ]
+[e :U 5 ]
+[e $ < _i _valor 2  ]
+[e :U 3 ]
+"54
+}
+[; ;atraso.c: 54: }
+[; ;atraso.c: 55: }
+"55
+[e :UE 1 ]
+}
