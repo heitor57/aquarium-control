@@ -1,2 +1,2 @@
 # aquarium-control
-Aquarium controlled by pic18f4550 with a program to android for configure the respective MCU.
+Aquarium controlled by PIC18F4550 with a program for Android to configure the respective MCU.
